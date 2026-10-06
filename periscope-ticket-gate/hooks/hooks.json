@@ -1,0 +1,30 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/usr/bin/python3 -I \"/Library/Application Support/Periscope/hooks/periscope-ticket-hook.py\" copilot-managed UserPromptSubmit",
+            "osx": "/usr/bin/python3 -I \"/Library/Application Support/Periscope/hooks/periscope-ticket-hook.py\" copilot-managed UserPromptSubmit",
+            "linux": "/usr/bin/python3 -I \"/usr/local/lib/periscope/hooks/periscope-ticket-hook.py\" copilot-managed UserPromptSubmit",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/usr/bin/python3 -I \"/Library/Application Support/Periscope/hooks/periscope-ticket-hook.py\" copilot-managed PreToolUse",
+            "osx": "/usr/bin/python3 -I \"/Library/Application Support/Periscope/hooks/periscope-ticket-hook.py\" copilot-managed PreToolUse",
+            "linux": "/usr/bin/python3 -I \"/usr/local/lib/periscope/hooks/periscope-ticket-hook.py\" copilot-managed PreToolUse",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "periscope",
+  "owner": {
+    "name": "BlueHive Health"
+  },
+  "metadata": {
+    "description": "Periscope agent plugins deployed by managed settings.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "periscope-ticket-gate",
+      "description": "Requires a validated ticket before AI work in VS Code's Copilot agent. Calls the root-owned Periscope supervisor installed by MDM.",
+      "version": "1.0.0",
+      "source": "./periscope-ticket-gate"
+    }
+  ]
+}

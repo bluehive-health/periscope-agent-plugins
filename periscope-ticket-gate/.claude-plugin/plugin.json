@@ -1,0 +1,11 @@
+{
+  "name": "periscope-ticket-gate",
+  "version": "1.0.0",
+  "description": "Periscope ticket gate for VS Code's Copilot agent.",
+  "author": {
+    "name": "BlueHive Health"
+  },
+  "homepage": "https://periscope.bluehive.com",
+  "repository": "https://github.com/bluehive-health/periscope",
+  "license": "UNLICENSED"
+}
