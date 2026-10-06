@@ -30,9 +30,10 @@ The tray's managed installer force-enables it in
 }
 ```
 
-The same managed file applies to Copilot CLI. The supervisor gates VS Code's payloads (snake_case
-`session_id` and `hook_event_name`), passes Copilot CLI's camelCase payloads through ungated, and
-blocks anything else. VS Code's `ChatHooks` policy must also be on (see the Periscope tray README).
+The same managed file applies to Copilot CLI, which sends the same hook fields. The supervisor
+gates a payload as VS Code when its `transcript_path` is in VS Code's `GitHub.copilot-chat`
+storage, and as Copilot CLI otherwise. VS Code's `ChatHooks` policy must also be on (see the
+Periscope tray README).
 
 The hook commands must match the supervisor registration in the Periscope tray
 (`agent/tray/src-tauri/src/managed_hooks.rs`); a tray test checks the source copy.
